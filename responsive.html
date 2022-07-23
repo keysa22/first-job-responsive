@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* tampilan tablet
+        .container { display: grid; grid-template-rows: 300px 748px 572px 338px 431px 558px; width: 100%; height: 100%;
+        grid-template-areas: 
+        'col1'
+        'col2'
+        'col3'
+        'col4'
+        'col5'
+        'col6'
+        'col7'
+        ;margin: auto;
+        grid-template-columns: 1440px;}
+        .col1 {display: ;}
+        
+        .footer { display: grid; grid-template-rows: 288px 288px;
+        margin: auto;
+        }
+       
+        .col1{grid-area: col1; gap: 60px; padding-top: 0px; padding-bottom: 0px;}
+        
+        .col2{grid-area: col2;}
+
+        .logo1{grid-area: logo1; height: 50px; width: 105px;}
+        .logo2{grid-area: logo2; height: 50px; width: 105px;}
+        .logo3{grid-area: logo3; height: 50px; width: 105px;}
+        .logo4{grid-area: logo4; height: 50px; width: 105px;}
+        .logo5{grid-area: logo5; height: 50px; width: 105px;}
+        .logo6{grid-area: logo6; height: 50px; width: 105px;}
+        .isilogo {grid-template-areas: 
+            '. logo1 logo2 logo3 logo4 . ' 
+            '. . logo5 logo6 . .'; 
+            row-gap: 0px; column-gap: 100px; justify-content: center; margin: 50px auto; display: grid;grid-template-columns: 25px 25px 25px 25px 25px 25px; width: 1230px; height: 190px; align-items: 
+            center;}
+        
+        .col3{grid-area: col3;}
+
+        .col4 {grid-template-areas: 
+            'col4-1 col4-1'
+            'col4-2 col4-2'
+            'col4-3 col4-3'
+            'col4-4 col4-4'
+            'col4-5 col4-5'
+            'col4-6 col4-6'
+            ;background-color: rgb(19, 248, 69); display: grid; grid-template-columns: 384px 384px 384px; grid-template-rows: 152px 152px 152px 152px 152px 152px; padding: 320px 10px 10px 10px; margin: 10px auto;
+        }
+
+        .col5{grid-area: col5;}
+
+        .col6{grid-area: col6;}
+
+        .col7{grid-area: col7;}*/
+
+        .btn1:hover{border: rgb(35, 39, 245);}
+        .btn1:hover { box-shadow: 0 0 1px 1px #6004f3; border-radius: 3px; scale:95px; transition:all; animation-duration:500;}
+        /* Responsive Breakpoint*/
+/* layar dekstop*/
+        @media screen and (min-width: 769px) {.container {display: grid; grid-template-rows: 866px 700px 892px 748px 338px 431px 558px; width: 100%; height: 100%; grid-template-areas: 
+        'col1'
+        'col2'
+        'col4'
+        'col3'
+        'col5'
+        'col6'
+        'col7'; width: 100%; margin: 0px auto;}
+        .col1{display: grid;}
+        .col1-area1{background-color: transparent; display: grid; grid-template-columns: 696px 488px; gap: 180px;}
+        .col1-3{display: flex;}
+        .isilogo {grid-template-areas: 
+            'logo1 logo2 logo3 logo4 logo5 logo6'; 
+            row-gap: 0px; column-gap: 100px; justify-content: center; margin: -50px auto; display: grid;grid-template-columns: 25px 25px 25px 25px 25px 25px; width: 100%; height: 190px; align-items: 
+            center;}
+        .logo1{margin-left: -100px;}    
+        .logo2{margin-left: -100px;}    
+        .logo3{margin-left: -100px;}    
+        .logo4{margin-left: -100px;}    
+        .logo5{margin-left: -100px;}    
+        .logo6{margin-left: 50px;}    
+        .ukuran-gambar-mobile{width: 80%; height: 100%; margin: 0px -10px -40px -90px;}
+
+        .col2{display: grid; grid-template-rows: 152px 890px;}
+        .col2-2{display: grid; grid-template-rows: 152px 152px; grid-template-columns: 380px 380px 380px;align-content: flex-start; justify-content: center; width: 100%;height: 100%; text-align: center; font: 1em sans-serif; font-weight: bold; gap: 20px;}
+
+        .col2-margin1{text-align: center;}
+        .col2-margin2{margin: -20px 200px 50px 200px; text-align: center;}
+
+        .col3{display: grid; grid-template-columns: 50% 50%;}
+        .col3-margin1{font-size: 44px; }
+        .col3-margin2{font-size: 17.5px; }
+        .margin2-a{ margin: 20px 0px 10px -50px}
+        .margin2-b{ margin: 20px 0px 10px 50px}
+        .margin3{ margin: 10px 10px 10px 280px;}
+        .margin4{ margin: 10px 10px 10px 10px;}
+        .margin5{ margin:10px 10px 10px 50px}
+        .margin6{ margin:10px 20px 10px 50px; font-size: 19px; }
+        .margin7{ margin:10px 290px 10px 50px}
+        .margin8{ margin:10px 50px 10px -300px}
+        .col3-margin0{margin: 70px 10px 10px 130px;}
+        .col3-margin1{margin: 128px 10px 10px 230px;}
+        .col3-margin2{margin: 10px 10px 70px 230px; }
+
+        .story1{margin: 10px 20px 10px 340px;}
+        .story1-margin1a{margin: -235px 11px 10px 50px; font-size: 18px;}
+        .story1-margin1b{margin: -67px 25px 10px 50px; font-size: 18px;}
+        .story1-margin1c{margin: -40px 25px 40px 50px; font-size: 18px;}
+        
+        .story2{margin: 10px 200px 10px 10px;}
+        .story2-margin1a{margin: 23px 50px 10px 57px;  font-size: 20px;}
+        .story2-margin1b{margin: 30px 25px 10px 57px; font-size: 18px;}
+        .story2-margin1c{margin: 10px 25px 30px 57px; font-size: 18px;}
+
+        .story3{margin: -120px -480px 100px 690px;}
+        .story3-margin1a{margin: 21px 55px 10px 70px; font-size: 20px;}
+        .story3-margin1b{margin: 30px 25px 10px 70px; font-size: 18px;}
+        .story3-margin1c{margin: 10px 25px 30px 70px; font-size: 18px;}
+
+        .judul2{display: grid; grid-template-rows:  320px ;padding-top: 200px;}
+        .col4{grid-template-columns: 384px 384px 384px;}
+
+         }
+/*layar tablet*/
+        @media screen and (max-width: 768px){
+            .container {grid-template-areas: 
+        'col1'
+        'col2'
+        'col4'
+        'col3'
+        'col5'
+        'col6'
+        'col7';
+    display: grid;
+    }
+    .col1-3{margin-top: 10px;}
+    .margin5{margin: 10px 10px 10px 50px; font-size: 45px;} 
+    .margin6{margin: 10px 10px 10px 50px; font-size: 15px;}   
+    .margin7{margin: 10px 10px 10px 50px;}   
+    .ukuran-gambar-mobile{ width:80%; height: 100%; }
+    .col1-2{display: grid; justify-content: center;}
+    .col2{display: grid; grid-template-rows: 152px 890px;}
+    .isilogo{display: grid; grid-template-columns: 50px 50px 50px 50px; column-gap: 70em; margin: 10px 10px 10px 10px; grid-template-rows: 50px 50px;}
+    
+
+        }
+/* layar hp*/
+        @media screen and (max-width: 412px) {
+        .container {grid-template-areas: 
+        'col1'
+        'col2'
+        'col4'
+        'col3'
+        'col5'
+        'col6'
+        'col7';
+    display: grid;
+    }
+        .margin1{margin: 0px 10px 10px 10px;}
+        .margin2{ margin: 0px 20px 0px 20px;}
+        .margin3{margin: 90px 10px 10px -400px; display: none;}
+        .margin4{margin: 90px 10px 10px -400px; display: none;}
+        .margin5{ margin:10px 10px 10px 10px}
+        .margin6{ margin:10px 20px 10px 10px; font-size: 19px;}
+       /* .col1-1{display: grid; grid-area: col1-1; grid-column-start: 1; grid-column-end: 1;}
+        .col1-2{display: grid; grid-area: col1-2; margin:300px -1650px 500px; grid-column-start:}
+        .col1-3{display: grid; grid-area: col1-3; grid-column-start: 1;}*/
+        .col1{}
+        .col1-area1{background-color: transparent; display: grid; grid-template-columns: 600px; gap: 180px;}
+        .col1-2{margin: -180px 10px 10px 0px;}
+        .ukuran-gambar-mobile{width: 100%; height: 100%;}
+        .col1{grid-template-areas: 
+            'col1-1'
+            'col1-2'
+            'col1-3'
+            ;display: grid;}
+    .col2{display: grid; grid-template-rows: 352px 890px; }
+    .isilogo{display: grid; grid-template-columns: 50px 50px 50px 50px; column-gap: 70px; margin: 300px 10px 10px -40px; padding: 0px;justify-content: center;}
+         
+        .logo1{}   
+        .logo2{}   
+        .logo3{}   
+        .logo4{}   
+        .logo5{}   
+        .logo6{margin: 10ox 10px 10px 100px ;}
+        
+        
+        .col2-2{display: grid; grid-template-rows: 152px 152px 152px 152px 152px 152px; grid-template-columns: 360px; justify-content: center; width: 100%;height: 100%; text-align: center; font: 1em sans-serif; font-weight: bold; gap: 20px; }
+
+        .col2-2{margin: -10px 10px 10px -70px;}
+        .col2-margin0{ margin: 100px 10px 10px 170px;}
+        .col2-margin1{text-align: center; margin: 
+            10px 90px 20px -90px;}
+        .col2-margin2{margin: -10px 70px 50px -80px; text-align: center;}
+
+        .col3{grid-template-areas:
+            'story1'
+            'story2'
+            'story3'
+        ; grid-template-columns: 100%;} 
+        .col3-margin0{margin: 68px 10px 10px 20px;}
+        .col3-margin1{margin: 128px -20px 10px 30px; font-size:50px;}
+        .col3-margin2{margin: 10px 10px 70px 30px; font-size: 25px; }
+        
+        .story1{margin: -40px 30px 10px 30px;}
+        .story1-margin1a{margin: -235px 25px 10px 57px; font-size:38px;}
+        .story1-margin1b{margin: 20px 25px 10px 57px; font-size: 30px;}
+        .story1-margin1c{margin: 0px 25px 40px 57px; font-size: 25px;}
+        
+        .story2{ margin:20px 30px 20px 30px; padding: 10px;}
+        .story2-margin1a{margin: 20px 10px 10px 47px; font-size: 37px;}
+        .story2-margin1b{margin: 20px 25px 10px 57px; font-size: 30px;}
+        .story2-margin1c{margin: 0px 25px 30px 57px; font-size: 25px;}
+
+        .story3{margin: 10px 30px 20px 30px; }
+        .story3-margin1a{margin: 20px 55px 10px 57px; font-size: 38px;}
+        .story3-margin1b{margin: 20px 25px 10px 57px; font-size: 30px;}
+        .story3-margin1c{margin: 0px 25px 30px 57px; font-size: 25px;}
+
+        .judul1{display: grid; grid-area: judul1;}
+
+        .judul2{display: grid; grid-area: judul2;}
+
+        .story1{display: grid; grid-area: story1;}   
+        .story2{display: grid; grid-area: story2;}   
+        .story3{display: grid; grid-area: story3;}   
+        .col4 {grid-template-areas: 
+            'col4-1'
+            'col4-2'
+            'col4-3'
+            'col4-4'
+            'col4-5'
+            'col4-6'
+            ;background-color: rgb(31, 77, 41); display: grid; grid-template-columns: 600px; grid-template-rows: 152px 152px 152px 152px 152px 152px; margin: 0px; padding: 10px auto;
+        }
+        .container {grid-template-rows: 900px 1780px 1800px 338px 431px 558px; grid-template-columns: 600px ; width: 100%; height: 100%;}
+        .col4-1 {grid-area: col4-1;}
+        .col4-2 {grid-area: col4-2;}
+        .col4-3 {grid-area: col4-3;}
+        .col4-4 {grid-area: col4-4;}
+        .col4-5 {grid-area: col4-5;}
+        .col4-6 {grid-area: col4-6;}
+        .margin5{ margin:10px 10px 10px 50px}
+        .margin6{ margin:10px 290px 10px 50px}
+        .margin7{ margin:10px 290px 10px 50px}
+        .margin8{ margin:10px 50px 10px -300px}
+            
+        }
+
+        /* col4*/
+        .col4-1 {grid-area: col4-1;}
+        .col4-2 {grid-area: col4-2;}
+        .col4-3 {grid-area: col4-3;}
+        .col4-4 {grid-area: col4-4;}
+        .col4-5 {grid-area: col4-5;}
+        .col4-6 {grid-area: col4-6;}
+    </style>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body style="margin: 0px; padding:0px;background-color: #fff;">
+    <div class="container">
+    <div class="col1" style="background-image: url(./Background1.png); background-repeat: no-repeat; background-size: cover;">
+    <div class="col1-3" style="margin: 10px 50px 10px 50px;">
+        <button style="background-color: transparent; border: 0px; cursor: pointer;"><img class="btn1" src="./Logo.png" alt="logo"></button>
+        <button style="background-color: transparent; border: 0px; cursor: pointer;"><h1 class="btn1" style="margin: 10px 10px 10px 50px; font-size: 20px; font:bold; font-family: arial;">Features</h1></button>
+        <button style="background-color: transparent; border: 0px; cursor: pointer;"><h1 class="btn1" style="margin: 10px 10px 10px 20px; font-size: 20px; font:bold; font-family: arial;">Pricing</h1></button>
+        <button style="background-color: transparent; border: 0px; cursor: pointer;"><h1 class="btn1" style="margin: 10px 10px 10px 20px; font-size: 20px; font:bold; font-family: arial;">Careers</h1></button>
+        <button style="background-color: transparent; border: 0px; cursor: pointer;"><h1 class="btn1" style="margin: 10px 10px 10px 20px; font-size: 20px; font:bold; font-family: arial;">Help</h1></button>
+        <button class="margin3" style="background-color: transparent; border: 0px; cursor: pointer; "><img class="btn1" src="./google-play.png" alt="logo"></button>
+        <button class="margin4" style="background-color: transparent; border: 0px; cursor: pointer;"><img class="btn1" src="./aple-Store.png" alt="logo"></button>
+        </div>
+        <div class="col1-area1"> 
+        <div class="col1-1" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;">
+                <h1 class="margin5">The easiest way to manage projects</h1>
+                <h2 class="margin6" style="line-height: 30px;">From the small stuff to the big picture, organizes the work so teams know what to do, why it matters, and how to get it done.</h2>
+                <button  style="border: none; padding: 10px 20px; border-radius: 5px; background-color: #7c3aed; cursor: pointer;" class="btn1 margin7"> Get Started</button>
+                <button style="border: none; padding: 10px 20px; border-radius: 5px; background-color: transparent; cursor: pointer;" class="btn1 margin8"><i class="fa fa-play-circle-o" style="font-size:16px;"></i> Watch Video</button>
+            </div> 
+            <div class="col1-2"><img class="ukuran-gambar-mobile" src="./Mobile.png"></div> 
+    </div>
+        </div>
+        <div class="col2">
+            <div class="isilogo">
+            <div class="logo1"><button  style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1" src="./_Client logo1.png" alt="logo"></button></div>
+            <div class="logo2"><button  style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1" src="./_Client logo2.png" alt="logo"></button></div>
+            <div class="logo3"><button  style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1" src="./_Client logo3.png" alt="logo"></button></div>
+            <div class="logo4"><button  style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1" src="./_Client logo4.png" alt="logo"></button></div>
+            <div class="logo5"><button  style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1 margin2-b" src="./_Client logo5.png" alt="logo"></button></div>
+            <div class="logo6"><button style="background-color: transparent; cursor: pointer;  font-size: 40px; border: none;"><img class="btn1 margin2-a" src="./_Client logo6.png" alt="logo"></button></div>
+           </div>
+           
+        <div class="col2-margin0" style="background-color:transparent;">
+            <h1 class="col2-margin1" style=" font-size: 44px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Tailor-made features</h1>
+            <h2 class="col2-margin2" style="font-size: 17.5px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus consectetur accusantium aspernatur minus cumque sed debitis repellat saepe!</h2>
+            <div class="col2-2">
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+        <h1>Robust workflow</h1>
+        <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div>
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+            <h1>Robust workflow</h1>
+            <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div>
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+            <h1>Robust workflow</h1>
+            <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div>
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+            <h1>Robust workflow</h1>
+            <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div>
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+            <h1>Robust workflow</h1>
+            <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div>
+        <div style="border: rgb(223, 236, 225) 4px solid;">
+            <i class="fa fa-book"></i>
+            <h1>Robust workflow</h1>
+            <h2 style="font-size: 16px; margin-top: -10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere commodi reiciendis</h2>
+        </div></div>
+        
+        
+        </div>
+        </div>
+        <div class="col3" style="background-color: #d5fafc;">
+        <div><img class="col3-margin0" style="position: absolute; display: grid; " src="./Quote mark.png">
+        <div class="judul1">
+            <h1 class="col3-margin1" style=" font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> Real Stories from Real Custumers</h1>
+            <h2 class="col3-margin2" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Get inspired by these stories.</h2>
+        </div>
+        <div class="story1" style="display: grid; grid-template-rows:  32px 268px; background-color: #fff; border-radius: 5px;">
+            <div style="box-sizing: 384px;">
+            <img style="margin: 20px 10px 10px 30px;" src="./_Client logo2.png">
+            </div>
+            <img style="margin: 30px 10px 10px 30px;" src="./Quote mark1.png">
+            <h1 class="story1-margin1a" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60;">To quickly start my startup lading page design, I was looking for a lading page UI Kit. ladify is one of the best lading page UI Kit I have come across. It's so flexible, well organised and easily editable</h1>
+            <h2 class="story1-margin1b" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Floyed Miles</h2>
+            <h3 class="story1-margin1c" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60; color: #b1b0b0;">Vice President GoPro</h3>
+        </div></div>
+        <div class="judul2">
+           <div class="story2" style="box-sizing: 384px; background-color: white; border-radius: 5px;
+          ">
+                <img style="margin: 20px 10px 10px 30px;" src="./_Client logo1.png"><img style="margin: 70px 10px 10px -100px; position: absolute;" src="./Quote mark1.png">
+                <h1 class="story2-margin1a" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60;">I used landify and created a landing page for my startup within a week. The Landify UI Kit is simple and highly intuitive, so anyone can use it</h1>
+                <h2 class="story2-margin1b" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Jane Cooper</h2>
+                <h3 class="story2-margin1c" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60; color: #b1b0b0;">CEO, Airbnb</h3>
+                </div></div>
+                
+            <div class="story3" style="background-color: #fff; border-radius: 5px; ">
+                <img style="margin: 20px 10px 10px 20px;" src="./_Client logo7.png"><img style="margin: 80px 10px 10px -100px; position: absolute;" src="./Quote mark1.png">
+                <h1 class="story3-margin1a" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60;">Landify seved our time in designing my company page.</h1>
+                <h2 class="story3-margin1b" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Cristin Watson</h2>
+                <h3 class="story3-margin1c" style="font-family: Arial, Helvetica, sans-serif; font-weight: 60; color: #b1b0b0;">Co-Founder, Strapi</h3>
+                </div>
+            </div>
+            
+        
+        <div class="col4" style="display: grid;  grid-template-rows: 152px 152px;">
+           <!-- <div class="col4-1" style="border: 1px black solid; display: grid;"></div>
+            <div class="col4-2" style="border: 1px black solid; display: grid;"></div>
+            <div class="col4-3" style="border: 1px black solid; display: grid;"></div>
+            <div class="col4-4" style="border: 1px black solid; display: grid;"></div>
+            <div class="col4-5" style="border: 1px black solid; display: grid;"></div>
+            <div class="col4-6" style="border: 1px black solid; display: grid;"></div>-->
+            </div>
+        <div class="col5" style="background-color: rgb(10, 136, 27);"></div>
+        <div class="col6" style="background-color: rgb(223, 128, 176);"></div>
+        <div class="col7" style="background-color: rgb(213, 240, 64);"></div>
+        </div>
+  ></div></div>
+</body>
+</html>
